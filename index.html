@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Order Inventory Automation</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>수주 및 재고 자동화 데모</h1>
+      <section class="panel">
+        <form id="order-form">
+          <input id="sku" placeholder="품목 코드" required />
+          <input id="customer" placeholder="업체 약어" required />
+          <input id="quantity" type="number" placeholder="수량" required />
+          <button>수주 등록</button>
+        </form>
+      </section>
+      <section class="columns">
+        <div class="panel"><h2>수주현황</h2><div id="orders"></div></div>
+        <div class="panel"><h2>재고수량</h2><div id="inventory"></div></div>
+        <div class="panel"><h2>부족 품목</h2><div id="shortage"></div></div>
+      </section>
+    </main>
+    <script src="./src/app.js"></script>
+  </body>
+</html>
+
